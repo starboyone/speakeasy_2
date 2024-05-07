@@ -39,7 +39,7 @@ const LearnPage = async () => {
     return (
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper>
-                <UserProgress hearts={userProgress.hearts} points={userProgress.points} activeCourses={userProgress.activeCourse}/>
+                <UserProgress hearts={userProgress.hearts} points={userProgress.points} diamonds={userProgress.diamonds} activeCourses={userProgress.activeCourse}/>
                 <Promo/>
                 <Quests points={userProgress.points}/>
             </StickyWrapper>

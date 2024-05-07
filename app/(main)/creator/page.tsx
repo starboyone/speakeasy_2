@@ -26,7 +26,7 @@ const CreatorPage = async() => {
     return (
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper>
-                <UserProgress hearts={userProgress.hearts} points={userProgress.points} activeCourses={userProgress.activeCourse} />
+                <UserProgress hearts={userProgress.hearts} points={userProgress.points} diamonds={userProgress.diamonds} activeCourses={userProgress.activeCourse} />
             </StickyWrapper>
             <FeedWrapper>
             <div className="pb-3 border-b-2 mb-5 sticky top-0 bg-white lg:pt-[28px] lg:mt-[-28px]">

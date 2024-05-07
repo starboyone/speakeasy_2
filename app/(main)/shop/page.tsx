@@ -22,7 +22,7 @@ const ShopPage = async () => {
     return (
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper>
-                <UserProgress hearts={userProgress.hearts} points={userProgress.points} activeCourses={userProgress.activeCourse} />
+                <UserProgress hearts={userProgress.hearts} points={userProgress.points} diamonds={userProgress.diamonds} activeCourses={userProgress.activeCourse} />
             </StickyWrapper>
             <FeedWrapper>
                 <div className="w-full flex flex-col items-center">
@@ -33,7 +33,7 @@ const ShopPage = async () => {
                     <p className="text-center text-muted-foreground text-lg mb-6">
                         Spend your points for customize your app.
                     </p>
-                    <Items hearts={userProgress.hearts} points={userProgress.points} hasActiveSubscription={false}/>
+                    {/* <Items hearts={userProgress.hearts} points={userProgress.points} hasActiveSubscription={false}/> */}
                 </div>
             </FeedWrapper>
         </div>

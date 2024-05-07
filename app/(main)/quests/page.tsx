@@ -24,7 +24,7 @@ const QuestsPage = async() => {
     return (
         <div className="flex flex-row-reverse gap-[48px] px-6">
             <StickyWrapper>
-                <UserProgress hearts={userProgress.hearts} points={userProgress.points} activeCourses={userProgress.activeCourse} />
+                <UserProgress hearts={userProgress.hearts} points={userProgress.points} diamonds={userProgress.diamonds} activeCourses={userProgress.activeCourse} />
             </StickyWrapper>
             <FeedWrapper>
                 <div className="w-full flex flex-col items-center">
@@ -39,8 +39,8 @@ const QuestsPage = async() => {
                         {quests.map((quest) => {
                             const progress = (userProgress.points / quest.value) * 100;
                             return(
-                                <div key={quest.title} className="p-4 space-y-4 border-t-2">
-                                    <div className="flex items-center w-full gap-x-4">
+                                <div key={quest.title} className="p-4 space-y-4 border-2 rounded-xl my-4">
+                                    <div className="flex items-center w-full gap-x-5">
                                         <Image src="/coin.svg" height={40} width={40} alt="Coin" />
                                     <div className="flex items-center justify-between w-full">
                                         <p className="text-neutral-700 text-xl font-bold">
@@ -53,10 +53,19 @@ const QuestsPage = async() => {
                                         )}
                                     </div>
                                     
-                                    </div><Progress value={progress} className="h-3"/>
+                                    </div>
+                                    <Progress value={progress} className="h-3"/>
                                 </div>
                             )
                         })}
+                        <div className="p-4 py-6 space-y-4 border-2 rounded-xl bg-slate-200">
+                            <div className="flex items-center w-full gap-x-5">
+                                <Image src="/lock.svg" height={40} width={40} alt="Lock" />
+                                <p className="text-neutral-700 text-xl font-bold">
+                                    More quests will be available soon
+                                </p>                         
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </FeedWrapper>

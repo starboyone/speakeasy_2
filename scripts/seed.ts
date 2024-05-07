@@ -98,7 +98,35 @@ const main = async () => {
                 id: 1,
                 lessonId: 1,
                 type: "SELECT",
-                question: 'Which one of these is the "the man"?',
+                question: 'Выберите слово "мужчина"',
+                order: 1
+            },
+            {
+                id: 2,
+                lessonId: 1,
+                type: "ASSIST",
+                question: 'мужчина',
+                order: 2
+            },
+            {
+                id: 3,
+                lessonId: 1,
+                type: "SELECT",
+                question: 'Выберите слово "груша"',
+                order: 3
+            },
+            {
+                id: 4,
+                lessonId: 1,
+                type: "HEAR",
+                question: "pear",
+                order: 4
+            },
+            {
+                id: 5,
+                lessonId: 2,
+                type: "SELECT",
+                question: 'Выберите слово "бегать"',
                 order: 1
             },
         ])
@@ -126,6 +154,65 @@ const main = async () => {
                 imgSrc: "/baby.svg",
                 audioSrc: "/en_baby.mp3",
                 text: "the baby",
+                correct: false
+            },
+            {
+                id: 4,
+                challengeId: 2,
+                audioSrc: "/en_baby.mp3",
+                text: "the baby",
+                correct: false
+            },
+            {
+                id: 5,
+                challengeId: 2,
+                audioSrc: "/en_woman.mp3",
+                text: "the woman",
+                correct: false
+            },
+            {
+                id: 6,
+                challengeId: 2,
+                audioSrc: "/en_man.mp3",
+                text: "the man",
+                correct: true
+            },
+            {
+                id: 7,
+                challengeId: 3,
+                imgSrc: "/apple.svg",
+                audioSrc: "/en_apple.mp3",
+                text: "the apple",
+                correct: false
+            },
+            {
+                id: 8,
+                challengeId: 3,
+                imgSrc: "/pear.svg",
+                audioSrc: "/en_pear.mp3",
+                text: "the pear",
+                correct: true
+            },
+            {
+                id: 9,
+                challengeId: 3,
+                imgSrc: "/orange.svg",
+                audioSrc: "/en_orange.mp3",
+                text: "the orange",
+                correct: false
+            },
+            {
+                id: 10,
+                challengeId: 4,
+                audioSrc: "/en_dear.mp3",
+                text: "dear",
+                correct: true
+            },
+            {
+                id: 11,
+                challengeId: 4,
+                audioSrc: "/en_dean.mp3",
+                text: "dean",
                 correct: false
             }
         ])

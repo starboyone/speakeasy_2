@@ -22,7 +22,7 @@ const LeaderboardPage = async() => {
     return (
         <div className="flex flex-row-reverse">
             <StickyWrapper>
-                <UserProgress activeCourses={userProgress.activeCourse} hearts={userProgress.hearts} points={userProgress.points}/>
+                <UserProgress activeCourses={userProgress.activeCourse} hearts={userProgress.hearts} points={userProgress.points} diamonds={userProgress.diamonds}/>
             </StickyWrapper>
             <FeedWrapper>
                 <div className="w-full flex flex-col items-center">
